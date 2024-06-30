@@ -18,7 +18,7 @@ import GoogleLogin from "./GoogleLogin.jsx";
 import PhonePe from "./pages/PhonePe.jsx";
 import { useState } from "react";
 
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = "next-stay-final-fi37.vercel.app";
 axios.defaults.withCredentials = true;
 function App() {
   const [user, setUser] = useState(null);
