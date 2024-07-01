@@ -246,7 +246,7 @@ app.use(cookieParser());
 app.use(cors({
     credentials: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    origin: 'https://next-stay-final-frontend.vercel.app/',
+    origin: 'https://next-stay-final-frontend.vercel.app',
 }));
 
 const mongoURI = process.env.MONGO_URL;
