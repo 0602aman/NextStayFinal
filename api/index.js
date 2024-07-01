@@ -268,8 +268,9 @@ app.post('/login', authController.login);
 app.get('/profile', authController.profile);
 app.post('/logout', authController.logout);
 
-app.get('/hello', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Hello World!');
+    
 });
 
 app.post("/upload-by-link", async (req, res) => {
