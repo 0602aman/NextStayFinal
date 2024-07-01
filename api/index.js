@@ -269,7 +269,7 @@ app.get('/profile', authController.profile);
 app.post('/logout', authController.logout);
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send({message: "Hello World!"});
     
 });
 
