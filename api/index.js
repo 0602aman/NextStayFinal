@@ -14,12 +14,12 @@ const sha256 = require('sha256');
 const crypto = require('crypto');
 
 
-const authController = require('./controllers/authController');
-const placeController = require('./controllers/placeController');
-const bookingController = require('./controllers/bookingController');
-const aiController = require('./controllers/aiController');
-const userController = require('./controllers/userController');
-const deleteController = require('./controllers/deleteController');
+const authController = require('./Controllers/authController');
+const placeController = require('./Controllers/placeController');
+const bookingController = require('./Controllers/bookingController');
+const aiController = require('./Controllers/aiController');
+const userController = require('./Controllers/userController');
+const deleteController = require('./Controllers/deleteController');
 
 const app = express();
 app.use(express.json());
