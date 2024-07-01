@@ -398,6 +398,7 @@ app.post("/api/status", (req, res) => {
     res.status(200).send({ message: "Payment successful", success: true });
 });
 
-app.listen(4000, () => {
-    console.log('Server is running on port 4000');
+const PORT = process.env.PORT
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
