@@ -245,7 +245,8 @@ app.use('/uploads', express.static(path.join('/tmp', 'uploads'))); // Use /tmp f
 app.use(cookieParser());
 app.use(cors({
     credentials: true,
-    origin: 'https://next-stay-final-frontend.vercel.app'
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    origin: 'https://next-stay-final-frontend.vercel.app',
 }));
 
 const mongoURI = process.env.MONGO_URL;
@@ -267,7 +268,7 @@ app.post('/login', authController.login);
 app.get('/profile', authController.profile);
 app.post('/logout', authController.logout);
 
-app.get('/', (req, res) => {
+app.get('/hello', (req, res) => {
     res.send('Hello World!');
 });
 
