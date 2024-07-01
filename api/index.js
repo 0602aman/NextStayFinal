@@ -265,7 +265,7 @@ mongoose.connect(mongoURI, {
 
 app.post('/register', authController.register);
 app.post('/login', authController.login);
-app.get('/profile', authController.profile);
+app.get('https://next-stay-final-backend.vercel.app/profile', authController.profile);
 app.post('/logout', authController.logout);
 
 app.get('/', (req, res) => {
