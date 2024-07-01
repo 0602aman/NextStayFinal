@@ -264,7 +264,7 @@ mongoose.connect(mongoURI, {
 .catch(err => console.error('MongoDB connection error:', err));
 
 app.post('/register', authController.register);
-app.post('/login', authController.login);
+app.post('https://next-stay-final-backend.vercel.app/login', authController.login);
 app.get('https://next-stay-final-backend.vercel.app/profile', authController.profile);
 app.post('/logout', authController.logout);
 
